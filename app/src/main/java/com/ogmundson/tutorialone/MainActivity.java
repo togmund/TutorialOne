@@ -8,11 +8,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,23 +15,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        String[] favoriteTVShows = {"Breaking Bad", "Better Call Saul", "The Good Wife", "Hannibal",
-                "Rick and Morty", "South Park", "High Maintenance"};
-
-        ListAdapter theAdapter = new ArrayAdapter<>(this, R.layout.row_layout,favoriteTVShows);
-        ListView theListView = (ListView) findViewById(R.id.theListView);
-        theListView.setAdapter(theAdapter);
-        theListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String tvShowPicked = "You selected " +
-                        String.valueOf(parent.getItemAtPosition(position));
-
-                Toast.makeText(MainActivity.this, tvShowPicked, Toast.LENGTH_SHORT).show();
-
-            }
-        });
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -70,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 

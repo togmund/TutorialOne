@@ -11,4 +11,8 @@
     <string name="answer_no">No</string>
     <string name="no_hint">Pick \'Yes\' you dummy!</string>
     <string name="yes_hint">Pick Me!</string>
+    <string name="options_exit_text">Exit</string>
+    <string name="enter_name_text_view">Enter Your Name</string>
+    <string name="enter_name_button">Enter</string>
+    <string name="calling_activity_message">The calling activity was</string>
 </resources>
