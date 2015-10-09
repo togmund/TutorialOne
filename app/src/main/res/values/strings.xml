@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Tutorial One</string>
     <string name="action_settings">Settings</string>
+    <string name="hello_world">i love my husband</string>
+    <string name="button_one">press here to love even more</string>
+    <string name="lub_button">Alabuutu!</string>
+    <string name="goodbye_world">Goodbye World!</string>
+    <string name="Your_Name">Your Name</string>
+    <string name="Happy_Question">Are you Happy?</string>
+    <string name="answer_yes">Yes</string>
+    <string name="answer_no">No</string>
+    <string name="no_hint">Pick \'Yes\' you dummy!</string>
+    <string name="yes_hint">Pick Me!</string>
 </resources>
