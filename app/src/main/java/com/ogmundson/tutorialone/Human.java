@@ -2,9 +2,6 @@ package com.ogmundson.tutorialone;
 
 import java.io.Serializable;
 
-/**
- * Created by Ted on 2015-10-09.
- */
 public class Human implements Serializable{
 
     private double height, weight;
